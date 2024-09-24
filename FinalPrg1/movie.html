@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <!-- Font Awesome -->  
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Font Size Type -->   
+<!--<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">-->
+
+
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+
+<script src="./Js/jquery-3.5.1.min.js"></script>
+<script src="./Js/popper.min.js"></script>
+<script src="./Js/bootstrap.min.js"></script>
+</head>
+<body class="bg-movie">
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-transparent shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand brandGredient" href="index.html">Movies</a>
+          <!--Start of toggler-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--End of toggler-->
+          <div class="collapse navbar-collapse small" id="navbarSupportedContent">
+            <!--start of Navbar items-->      
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Movies</a>
+                </li>
+      
+               
+    
+                <li class="nav-item">
+                    <a class="nav-link " href="logIn.html">Log In</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="callus.html">Call Us</a>
+                  </li>
+              </ul>
+            <!--End of Navbar items-->
+    
+            <form class="d-flex gap-3" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Search for..." />
+                <button class="btn btn-success btn-sm" type="button" id="button-addon2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="vr text-white"></div>
+              <button class="btn btn-warning btn-sm ml-4" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power"
+                  viewBox="0 0 16 16">
+                  <path d="M7.5 1v7h1V1h-1z" />
+                  <path
+                    d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <header class="startmovie d-flex  flex-wrap  vh-100">
+       <div class="title mb-auto justify-content-between">
+        <div class="title-r ">
+            <h6 class="pl-3 ">Enjoy with</h6>
+            <div class="d-inline-flex"> <h3 class="pl-5" style="color: white;">OUR <h2  class="movieh" style="color: yellow;">MOVIES</h2></h3> </div>
+            
+        </div> 
+
+        </div>
+       </div>
+       <div class="title-l">
+        <button type="button" class="btn btn-light">Most Viewed</button>
+        <button type="button" class="btn btn-light">Most Interact</button>
+        <button type="button" class="btn btn-light">Highest React</button>
+       </div>
+       
+       <div class="container-fluid">
+        <div class="row ">
+            <div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster01.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Womens</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster02.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>The Perfect Match</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster03.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Dog Woof</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster05.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>The Ckooking</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>       
+                    </div>        
+                </div>
+            </div>
+
+        </div>
+
+       </div>
+       <br>
+       <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster10.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Black Friday soper sale</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster09.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Women`s</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster08.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Beach Ball cup</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster07.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Life Qoutes</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>       
+                    </div>        
+                </div>
+            </div>
+
+        </div>
+
+       </div>
+       <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster06.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Hikaru</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster02.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>The Perfect Match</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster03.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>Dog Woof</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="poster ">
+                        <img src="./img/pster/ucm_poster05.jpg" alt="Movie">
+                    </div>
+                    <div class="datalest">
+                        <h1>The Ckooking</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Ullam voluptas <br> tenetur cum dignissimos fugit nulla.</p>
+                        <div class="stars">
+                            <input type="radio" name="" id="star5">
+                            <label for="star5"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star4">
+                            <label for="star4"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star3">
+                            <label for="star3"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star2">
+                            <label for="star2"><i class="fa-regular fa-star"></i></label>
+                            <input type="radio" name="" id="star1">
+                            <label for="star1"><i class="fa-regular fa-star"></i></label>
+        
+                        </div>
+                        <button type="button" class="c-button btn btn-outline-warning"> <i class="fa fa-bookmark"></i> Add To Favorits</button>       
+                    </div>        
+                </div>
+            </div>
+
+        </div>
+
+       </div>
+    </header>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    /*font-family: "Cormorant Garamond", serif;*/
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.h-bg
+{
+    background-image: url(../img/pg/pexels-cottonbro-3945321.jpg);
+    background-size:cover ;
+    background-position: center center;
+    justify-content: center;
+    
+}
+.layer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.layercontent h2{
+    margin-top: 70px;
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+.layercontent h1
+{
+    color:khaki;
+    font-size: 98px;
+}
+@keyframes movement
+{
+    0%{left: 90px; right: 0;}
+    100%{left: 0; right: 90px;}
+}
+
+.layer button
+{
+    margin-left: 15%;
+    margin-top: 25px;
+    border-radius: 25px;
+    padding: 18px;
+}
+
+.layer a
+{
+    list-style: none;
+}
+.btn2
+{
+    margin-right: 70%;
+}
+/*
+.social-icons
+{
+   width: 50px;
+   height:50px ;
+   border-radius: 50%;
+}*/
+/*Movies Page*/
+.startmovie
+{
+    padding-top: 70px;
+}
+.bg-movie
+{
+    background: linear-gradient( rgba(120, 70, 31, 1), rgba(120, 70, 31, 0.5));
+    background-attachment: fixed;
+    background-size: cover;
+}
+.poster
+
+{
+    padding: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.tytle
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-between;
+  /* align-items: center;*/
+}
+.title-l
+{
+    margin-left: 70%;
+
+}
+.title-r
+{
+    font-size: 40px;
+}
+.title-r h6
+{
+    color: white;
+    font-size: 35px;
+}
+.movieh
+{
+    margin-top: 1px;
+    font-size: larger;
+}
+.card
+{
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 300px ;
+    height: 450px;
+    border-radius: 14px;
+}
+.poster
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.poster img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+.datalest
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5em 1.5em 2em;    
+    background-color:rgba(42, 63, 85, 0.7);
+    color: white;
+    text-align: center;
+    transition: top 1s ;    
+}
+.datalest p{
+    font-size: 18px;
+    padding: 30px;
+}
+.card:hover .datalest {
+   top: 0;
+}
+
+.stars input
+{
+    display: none ;
+}
+.stars label
+{
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+.stars input:checked~ label,
+.stars label:hover,
+.stars label:hover~label
+{
+    color: rgb(255, 166, 0);
+    transition: 3s;
+}
+.c-button
+{
+    color: white;
+}
+
+/*Login page*/
+.card-header
+{
+    font-size: x-large;
+    font-weight: 600;
+    color: whitesmoke;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+}
+.cardlog
+{
+    width: 130%;
+    height: 80%;
+    padding: 90%;
+    border-radius: 10px;
+}
+.card-header
+{
+    background-color: rgb(23, 106, 109);
+   
+}
+.buttonf
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*call us page*/
+.bgcallus
+{
+    background-image: url(../img/pg/Popcorn\ tickets\ film\ roll\ top\ containing\ movie\,\ entertainment\,\ and\ top.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.calluslayer
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.callusbtn
+{
+
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 23px;
+
+}
+.finbtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logbtn
+{
+    padding: 15px;
+    border-radius: 27px;
+}
